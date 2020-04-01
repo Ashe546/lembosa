@@ -27,6 +27,4 @@ mongoose.connect(process.env.DATABASE_URL ,
 
 app.use('/', upoloadRouter)
 
-app.listen(3000, () => {
-    console.log("listning on port 3000")
-})
+app.listen(process.env.PORT || 3000)
